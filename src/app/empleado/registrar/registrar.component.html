@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css"
+  integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<div>
+  <!--vista para registrarse-->
+  <form>
+    <div  class="container">
+      <h1>Registrarse</h1>
+      <div class="mb-3">
+        <label for="name" class="form-label">Nombre completo</label>
+        <input #nombres class="form-control" id="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input #mail type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input #pass type="password" class="form-control" id="password" required>
+      </div>
+      <div class="mb-3">
+        <label for="confirmaPassword" class="form-label">Confirmacion password</label>
+        <input #pass2 type="password" class="form-control" id="confirmaPassword" required>
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="registro(nombres.value,mail.value,pass.value,pass2.value)">Aceptar</button>
+    </div>
+  </form>
+</div>
